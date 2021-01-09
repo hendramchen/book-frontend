@@ -1,0 +1,38 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Create Book</h3>
+
+    <div class="form-group">
+      <input
+        type="text"
+        [(ngModel)]="bookDetail.title"
+        class="form-control"
+        placeholder="Title"
+      />
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        [(ngModel)]="bookDetail.author"
+        class="form-control"
+        placeholder="Author"
+      />
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        [(ngModel)]="bookDetail.description"
+        class="form-control"
+        placeholder="Description"
+      />
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addBook()">
+        Create Book
+      </button>
+    </div>
+  </div>
+</div>
